@@ -39,7 +39,7 @@ export interface Schema {
     actions: {
         exampleAction: {
             params: {
-                delay: number;
+                text: string;
             };
             returns: {
                 success: boolean;
@@ -47,10 +47,9 @@ export interface Schema {
         };
     };
     events: {
-        onExample: {
+        exampleEvent: {
             payload: {
-                oldStatus: string;
-                newStatus: string;
+                statusText: string;
                 timestamp: number;
             };
         };
